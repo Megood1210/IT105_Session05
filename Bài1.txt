@@ -1,0 +1,27 @@
+1. Khách hàng
+ -Vai trò:
+  +Là người sử dụng hệ thống (actor chính)
+  +Khởi tạo các yêu cầu như: chọn sản phẩm, đặt hàng, và tiến hành thanh toán
+  +Tương tác trực tiếp với Website để thực hiện các hành động
+ -Nhiệm vụ:
+  +Gửi yêu cầu thanh toán qua Website
+  +Nhập thông tin cần thiết (phương thức thanh toán, địa chỉ giao hàng,...)
+  +Nhận thông báo kết quả thanh toán từ hệ thống
+2. Website 
+ -Vai trò:
+  +Là trung gian giao tiếp giữa Khách hàng và Hệ thống thanh toán
+  +Xử lý logic nghiệp vụ cơ bản và điều phối luồng dữ liệu
+  +Đảm bảo hiển thị thông tin và phản hồi đúng cho người dùng
+ -Nhiệm vụ:
+  +Nhận yêu cầu thanh toán từ khách hàng
+  +Gửi thông tin thanh toán sang Hệ thống thanh toán
+  +Nhận kết quả trả về
+  +Hiển thị thông báo kết quả cho Khách hàng
+3. Hệ thống thanh toán 
+ -Vai trò:
+  +Là hệ thống bên thứ ba chuyên xử lý các giao dịch tài chính
+  +Đảm bảo việc thanh toán an toàn, bảo mật và xác thực giao dịch
+ -Nhiệm vụ cụ thể:
+  +Nhận yêu cầu thanh toán từ Website
+  +Kiểm tra thông tin thẻ, số dư hoặc xác thực người dùng
+  +Gửi kết quả giao dịch về cho Website
